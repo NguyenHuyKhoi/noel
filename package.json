@@ -1,7 +1,6 @@
 {
-  "name": "noel2",
+  "name": "noel",
   "private": true,
-  "homepage": "https://nguyenhuykhoi.github.io/noel/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
