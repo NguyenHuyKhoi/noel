@@ -1,0 +1,10 @@
+@keyframes zoomAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.zoom-periodically {
+animation: zoomAnimation 5s ease-in-out infinite; /* Change '5s' to adjust the duration */
+/* Other styles for the element */
+}
