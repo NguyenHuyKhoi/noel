@@ -12,7 +12,7 @@ function App() {
   const openGift = useCallback(() => {
     setEnableAudio(true);
 
-    const rickroll = Math.random() <= 0.3;
+    const rickroll = Math.random() <= 0.2;
     if (rickroll) {
       if (audioRef2?.current) {
         audioRef2.current.muted = false;
