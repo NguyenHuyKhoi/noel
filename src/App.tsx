@@ -1,8 +1,7 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import { images } from "./assets";
 import audioSrc1 from "./merry_christmas.mp3";
 import audioSrc2 from "./merry_christmas.ogg";
-import audioSrc3 from "./merry_christmas.wav";
 
 import audioSrc4 from "./rickroll.mp3";
 import audioSrc5 from "./rickroll.ogg";
@@ -27,19 +26,6 @@ function App() {
     }
   }, []);
 
-  const [isZoomed, setIsZoomed] = useState(false);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (enableAudio) {
-        return;
-      }
-      setIsZoomed((prevState) => !prevState);
-    }, 500);
-
-    return () => clearInterval(interval);
-  }, [enableAudio]);
-
   return (
     <div
       style={{
@@ -57,7 +43,6 @@ function App() {
       >
         <source src={audioSrc1} type="audio/mpeg" />
         <source src={audioSrc2} type="audio/ogg" />
-        <source src={audioSrc3} type="audio/wav" />
       </audio>
 
       <audio
