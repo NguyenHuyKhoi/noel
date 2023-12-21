@@ -61,7 +61,7 @@ function App() {
       {enableAudio ? (
         <>
           {/* <img src={images.card} style={{ width: "100%", height: "100%" }} /> */}
-          <video width="100%" height="100%" autoPlay loop>
+          <video width="100%" height="100%" autoPlay loop muted>
             <source src={videoSrc} type="video/mp4" />
           </video>
           {/* <img
