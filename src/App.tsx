@@ -5,6 +5,8 @@ import audioSrc2 from "./merry_christmas.ogg";
 
 import audioSrc4 from "./rickroll.mp3";
 import audioSrc5 from "./rickroll.ogg";
+
+import videoSrc from "./video.mp4";
 function App() {
   const [enableAudio, setEnableAudio] = useState(false);
   const audioRef = useRef<HTMLAudioElement>();
@@ -12,7 +14,7 @@ function App() {
   const openGift = useCallback(() => {
     setEnableAudio(true);
 
-    const rickroll = Math.random() <= 0.2;
+    const rickroll = Math.random() <= 0.15;
     if (rickroll) {
       if (audioRef2?.current) {
         audioRef2.current.muted = false;
@@ -58,7 +60,10 @@ function App() {
 
       {enableAudio ? (
         <>
-          <img src={images.card} style={{ width: "100%", height: "100%" }} />
+          {/* <img src={images.card} style={{ width: "100%", height: "100%" }} /> */}
+          <video width="100%" height="100%" autoPlay loop>
+            <source src={videoSrc} type="video/mp4" />
+          </video>
           <img
             src={images.snow}
             style={{
