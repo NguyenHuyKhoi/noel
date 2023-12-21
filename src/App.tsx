@@ -64,7 +64,7 @@ function App() {
           <video width="100%" height="100%" autoPlay loop>
             <source src={videoSrc} type="video/mp4" />
           </video>
-          <img
+          {/* <img
             src={images.snow}
             style={{
               width: "100%",
@@ -76,7 +76,7 @@ function App() {
               right: 0,
             }}
             onClick={() => setEnableAudio(false)}
-          />
+          /> */}
         </>
       ) : (
         <div
