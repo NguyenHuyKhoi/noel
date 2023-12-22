@@ -87,9 +87,10 @@ function App() {
             height: "100vh",
             justifyContent: "center",
             alignItems: "center",
+            backgroundColor: "#000",
           }}
         >
-          <img src={images.open_gift2} style={{ width: 250, aspectRatio: 1 }} />
+          <img src={images.open_gift3} style={{ width: 250, aspectRatio: 1 }} />
           {/* <div
             className=".zoom-periodically "
             style={{
